@@ -5,7 +5,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 const Home = () => {
   return (
     <>
-        <View style ={styles.header}>
+        <View style ={styles.section}>
             <Text style= {styles.title}>Instrumentation</Text>
         </View> 
         <View style={styles.showcase}>
@@ -34,16 +34,46 @@ const Home = () => {
         <Image source={require('../assets/winds.jpg')} style={styles.img}/>
         </View>
         </View>
+        <View style ={styles.section}>
+            <Text style= {styles.title}>Bands</Text>
+        </View> 
+        <View style={styles.showcase}>
+        <View style= {styles.card}>
+        <Text style= {styles.label}>Rock</Text>
+        <Image source={require('../assets/rock.jpg')} style={styles.img}/>
+        </View>
+        <View style= {styles.card}>
+        <Text style= {styles.label}>Country</Text>
+        <Image source={require('../assets/country.jpg')} style={styles.img}/>
+        </View>
+        <View style= {styles.card}>
+        <Text style ={styles.label}>Electronic</Text>
+        <Image source={require('../assets/edm.jpg')} style={styles.img}/>
+        </View>
+        <View style= {styles.card}>
+        <Text style= {styles.label}>Rap</Text>
+        <Image source={require('../assets/rap.jpg')} style={styles.img}/>
+        </View>
+        <View style= {styles.card}>
+        <Text style= {styles.label}>Metal</Text>
+        <Image source={require('../assets/metal.jpg')} style={styles.img}/>
+        </View>
+        <View style= {styles.card}>
+        <Text style= {styles.label}>Punk</Text>
+        <Image source={require('../assets/punk.jpg')} style={styles.img}/>
+        </View>
+        </View>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-    header:{
+    section:{
         backgroundColor: 'orange',
         height: 50,
         width: 'auto',
         alignItems: 'center',
+        marginTop: 10,
     },
     title:{
         fontSize: 40,
