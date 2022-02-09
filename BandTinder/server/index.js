@@ -6,8 +6,9 @@ import {createServer} from 'http';
 
 
 
-const app = express();
 
+const app = express();
+const CONNECTION_URL = "mongodb+srv://arrayclass:array123@cluster0.wyyr0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const PORT = 5000;
 
 app.use(express.json());
@@ -21,5 +22,7 @@ app.post('/posts', (req, res) => {
         body
     });
 })
+
+
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

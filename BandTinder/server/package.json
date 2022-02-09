@@ -1,7 +1,6 @@
 {
-  "name": "server",
+  "name": "y",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "dependencies": {
@@ -13,7 +12,6 @@
     "nodemon": "^2.0.15",
     "socket.io": "^4.4.1"
   },
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
@@ -21,7 +19,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "description": ""
 }
-
-
